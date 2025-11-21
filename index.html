@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Concierge du Nord | Conciergerie Airbnb</title>
+  <link rel="icon" href="assets/logo-placeholder.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="src/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <div class="logo-area">
+        <img src="assets/logo-placeholder.svg" alt="logo-placeholder" />
+        <div class="brand-name">Le Concierge du Nord</div>
+      </div>
+      <div class="nav-toggle" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#tarifs">Tarifs</a></li>
+          <li><a href="#proprietaires">Propriétaires</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn-primary" href="#contact">Devenir propriétaire partenaire</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="hero">
+      <div>
+        <div class="badge">Conciergerie premium à Québec</div>
+        <h1>Votre bien mérite une gestion d'exception.</h1>
+        <p>Conciergerie haut de gamme spécialisée Airbnb pour maximiser vos revenus et offrir une expérience 5 étoiles à vos voyageurs.</p>
+        <div class="plan-actions">
+          <a class="btn-primary" href="#contact">Planifier un appel</a>
+          <a class="btn-outline" href="#services">Découvrir nos services</a>
+        </div>
+      </div>
+      <div class="hero-image" data-animate="fade-in">
+        <img src="assets/hero-image-placeholder.svg" alt="hero-image-placeholder" />
+      </div>
+    </section>
+
+    <section class="section" id="avantages">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Avantages clés</h2></div>
+        <div class="grid-4">
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">🏠</div>
+            <h3>Gestion complète</h3>
+            <p>De l'annonce à la remise des clés, nous orchestrons chaque étape pour une tranquillité totale.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">📈</div>
+            <h3>Optimisation Airbnb</h3>
+            <p>Tarification dynamique, description persuasive et calendrier optimisé pour maximiser le taux d'occupation.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">🧼</div>
+            <h3>Nettoyage hôtelier</h3>
+            <p>Protocoles 5 étoiles, linge premium et contrôle qualité après chaque séjour.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">⏰</div>
+            <h3>Assistance 24/7</h3>
+            <p>Support réactif pour vos invités et vous-même, de jour comme de nuit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plan">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Plan d'intervention</h2></div>
+        <div class="plan-image">
+          <img src="assets/plan-placeholder.svg" alt="plan-placeholder" />
+        </div>
+        <div class="plan-actions">
+          <button class="plan-button active">Level 1</button>
+          <button class="plan-button">Level 2</button>
+          <button class="plan-button">Level 3</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galerie">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Galerie</h2></div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/gallery-placeholder-1.svg" alt="gallery-placeholder-1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/gallery-placeholder-2.svg" alt="gallery-placeholder-2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/gallery-placeholder-3.svg" alt="gallery-placeholder-3" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Services signatures</h2></div>
+        <div class="services-grid">
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">🗝️</div>
+            <h3>Gestion locative complète</h3>
+            <p>Check-in autonome ou en personne, coordination des ménages, suivi des avis et ajustements continus.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">🛠️</div>
+            <h3>Maintenance proactive</h3>
+            <p>Réseau de plombiers, électriciens et techniciens prêts à intervenir pour préserver la qualité de votre bien.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="card-icon">🧽</div>
+            <h3>Nettoyage hôtelier</h3>
+            <p>Équipes formées aux standards hôteliers, contrôle rigoureux et réassort des consommables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proprietaires">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Comment ça marche</h2></div>
+        <div class="how-grid">
+          <div class="card" data-animate="fade-up">
+            <div class="badge">Étape 1</div>
+            <h3>Audit stratégique</h3>
+            <p>Analyse de votre bien, positionnement tarifaire, recommandations d'aménagement et projection de revenus.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="badge">Étape 2</div>
+            <h3>Mise en place</h3>
+            <p>Shooting photo (à venir), rédaction optimisée de l'annonce, synchronisation des calendriers et automatisations.</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="badge">Étape 3</div>
+            <h3>Gestion complète</h3>
+            <p>Communication voyageurs, supervision des ménages, reporting mensuel et optimisation continue.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tarifs">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Tarifs transparents</h2></div>
+        <div class="pricing-grid">
+          <div class="pricing-card" data-animate="fade-up">
+            <div class="badge">Essentiel</div>
+            <h3>Gestion essentielle</h3>
+            <div class="price">18% / séjour</div>
+            <div class="table-like">
+              <p>✔️ Gestion des annonces et calendrier</p>
+              <p>✔️ Assistance voyageurs</p>
+              <p>✔️ Coordination ménage</p>
+            </div>
+          </div>
+          <div class="pricing-card" data-animate="fade-up">
+            <div class="badge">Recommandé</div>
+            <h3>Gestion premium</h3>
+            <div class="price">22% / séjour</div>
+            <div class="table-like">
+              <p>✔️ + Optimisation prix dynamique</p>
+              <p>✔️ + Check-in assisté</p>
+              <p>✔️ + Kit hôtelier premium</p>
+            </div>
+          </div>
+          <div class="pricing-card" data-animate="fade-up">
+            <div class="badge">Sur mesure</div>
+            <h3>Investisseur</h3>
+            <div class="price">sur devis</div>
+            <div class="table-like">
+              <p>✔️ Gestion multi-biens</p>
+              <p>✔️ + Maintenance prioritaire</p>
+              <p>✔️ + Reporting personnalisé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pourquoi">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Pourquoi nous choisir</h2></div>
+        <div class="stats-grid">
+          <div class="stat-card" data-animate="fade-up">
+            <div class="stat-value">+28%</div>
+            <p>Revenus moyens supplémentaires grâce à notre tarification intelligente.</p>
+          </div>
+          <div class="stat-card" data-animate="fade-up">
+            <div class="stat-value">4.9/5</div>
+            <p>Note moyenne des voyageurs accompagnés par nos équipes.</p>
+          </div>
+          <div class="stat-card" data-animate="fade-up">
+            <div class="stat-value">24/7</div>
+            <p>Disponibilité pour vos invités et vos besoins propriétaires.</p>
+          </div>
+          <div class="stat-card" data-animate="fade-up">
+            <div class="stat-value">100%</div>
+            <p>Placeholders de témoignages prêts à accueillir vos retours clients.</p>
+          </div>
+        </div>
+        <div class="section-title" style="margin-top: 32px;"><span></span><h2>Témoignages</h2></div>
+        <div class="grid-4">
+          <div class="card" data-animate="fade-up">
+            <div class="testimonial">“Placeholder témoignage #1.”</div>
+            <p>- Propriétaire A</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="testimonial">“Placeholder témoignage #2.”</div>
+            <p>- Propriétaire B</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="testimonial">“Placeholder témoignage #3.”</div>
+            <p>- Propriétaire C</p>
+          </div>
+          <div class="card" data-animate="fade-up">
+            <div class="testimonial">“Placeholder témoignage #4.”</div>
+            <p>- Propriétaire D</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Contact & onboarding</h2></div>
+        <div class="contact-grid">
+          <form>
+            <input type="text" placeholder="Nom" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Ville / Quartier" />
+            <textarea rows="4" placeholder="Décrivez votre bien et vos attentes"></textarea>
+            <button type="submit" class="btn-primary">Envoyer</button>
+            <a class="btn-outline" href="https://wa.me/" target="_blank" rel="noreferrer">Discuter sur WhatsApp</a>
+          </form>
+          <div class="contact-placeholder">
+            <img src="assets/contact-placeholder.svg" alt="contact-placeholder" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="logo-area">
+        <img src="assets/logo-placeholder.svg" alt="logo-placeholder" />
+        <div>
+          <div class="brand-name">Le Concierge du Nord</div>
+          <p style="color: #c2c2c2;">Conciergerie Airbnb premium</p>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <a href="#hero">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#proprietaires">Propriétaires</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div style="text-align: right; color: #b5b5b5;">
+        <p>Mentions légales</p>
+        <p>© 2024 Le Concierge du Nord. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
