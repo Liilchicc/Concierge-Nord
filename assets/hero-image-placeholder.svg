@@ -1,0 +1,5 @@
+<svg width="1440" height="700" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1440" height="700" fill="#000000"/>
+  <rect x="40" y="40" width="1360" height="620" fill="none" stroke="#D4AF37" stroke-width="4" stroke-dasharray="14 10"/>
+  <text x="50%" y="50%" text-anchor="middle" fill="#D4AF37" font-family="Montserrat, Arial" font-size="36" font-weight="bold">hero-image-placeholder</text>
+</svg>

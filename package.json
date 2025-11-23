@@ -1,0 +1,11 @@
+{
+  "name": "concierge-nord",
+  "version": "1.0.0",
+  "description": "Site vitrine Le Concierge du Nord - conciergerie Airbnb premium",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  },
+  "keywords": ["conciergerie", "airbnb", "vercel", "render", "static-site"],
+  "author": "Le Concierge du Nord",
+  "license": "MIT"
+}
