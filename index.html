@@ -36,7 +36,9 @@
   </header>
 
   <main>
-    <section class="hero container" id="hero">
+    <!-- premier code HERO  -->
+ <!--    
+<section class="hero container" id="hero">
       <div>
         <div class="badge">Conciergerie premium à Québec</div>
         <h1>Votre bien mérite une gestion d'exception.</h1>
@@ -50,6 +52,45 @@
         <img src="assets/Hero-image.jpg" alt="assets/hero-image-placeholder.svg" />
       </div>
     </section>
+-->
+<section class="hero hero--cinematic" id="hero">
+  <!-- Background image (plein écran) -->
+  <div class="hero__bg" style="background-image:url('assets/Hero-image.jpg')"></div>
+  <div class="hero__overlay"></div>
+
+  <!-- Particules (optionnel, pure CSS) -->
+  <div class="hero__particles" aria-hidden="true">
+    <span class="p p1"></span><span class="p p2"></span><span class="p p3"></span>
+    <span class="p p4"></span><span class="p p5"></span><span class="p p6"></span>
+  </div>
+
+  <div class="container hero__content">
+    <div class="hero__left">
+      <div class="badge">Conciergerie premium à Québec</div>
+      <h1>Votre bien mérite une gestion d'exception.</h1>
+      <p>Conciergerie haut de gamme spécialisée Airbnb pour maximiser vos revenus et offrir une expérience 5 étoiles à vos voyageurs.</p>
+
+      <div class="plan-actions">
+        <a class="btn-primary" href="#contact">Planifier un appel</a>
+        <a class="btn-outline" href="#services">Découvrir nos services</a>
+      </div>
+    </div>
+
+    <div class="hero__right" data-animate="fade-in">
+      <div class="hero-card">
+        <div class="hero-card__kicker">Innovation dans chaque séjour</div>
+        <div class="hero-card__headline">Service premium, performance mesurable.</div>
+        <div class="hero-card__line"></div>
+
+        <div class="hero-card__meta">
+          <div><span class="dot"></span>Support voyageurs 24/7</div>
+          <div><span class="dot"></span>Optimisation tarifaire</div>
+          <div><span class="dot"></span>Contrôle qualité</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section class="section" id="avantages">
       <div class="container">
