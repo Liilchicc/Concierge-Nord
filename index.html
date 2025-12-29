@@ -372,12 +372,68 @@ Nous réalisons des photos de haute qualité qui subliment votre bien, augmenten
       <div class="container">
         <div class="section-title"><span></span><h2>Contact & onboarding</h2></div>
         <div class="contact-grid">
+          <!-- premier code contact -->
+             <!--
           <form>
+      
             <input type="text" placeholder="Nom" required />
             <input type="email" placeholder="Email" required />
             <input type="text" placeholder="Ville / Quartier" />
             <textarea rows="4" placeholder="Décrivez votre bien et vos attentes"></textarea>
             <button type="submit" class="btn-primary">Envoyer</button>
+            -->
+           <form
+  id="contact-form"
+  action="https://formspree.io/f/TON_ID"
+  method="POST"
+>
+  <input
+    type="text"
+    name="nom"
+    placeholder="Nom"
+    autocomplete="name"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    autocomplete="email"
+    required
+  />
+
+  <input
+    type="tel"
+    name="telephone"
+    placeholder="Téléphone (ex: +1 418 555 1234)"
+    autocomplete="tel"
+    inputmode="tel"
+    pattern="^[0-9+(). -]{7,20}$"
+    required
+  />
+
+  <input
+    type="text"
+    name="ville"
+    placeholder="Ville / Quartier"
+    autocomplete="address-level2"
+  />
+
+  <textarea
+    name="message"
+    rows="4"
+    placeholder="Décrivez votre bien et vos attentes"
+    required
+  ></textarea>
+
+  <!-- Métadonnées utiles -->
+  <input type="hidden" name="source" value="concierge-nord.vercel.app" />
+  <input type="hidden" name="_subject" value="Nouveau contact — Le Concierge du Nord" />
+
+  <button type="submit" class="btn-primary">Envoyer</button>
+  
+  
             <a class="btn-outline" href="https://wa.me/" target="_blank" rel="noreferrer">Discuter sur WhatsApp</a>
           </form>
           <div class="contact-placeholder">
