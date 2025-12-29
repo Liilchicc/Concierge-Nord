@@ -405,7 +405,7 @@ footer {
    ========================= */
 .hero.hero--cinematic{
   position: relative;
-  min-height: 78vh;
+  min-height: 68vh;
   padding: 0;               /* on ignore le padding du .hero actuel */
   display: block;           /* on ignore la grid du .hero actuel */
   overflow: hidden;
@@ -418,7 +418,7 @@ footer {
   background-size: cover;
   background-position: center;
   transform: scale(1.04);
-  filter: saturate(1.08) contrast(1.05);
+  filter: saturate(1.08) contrast(1.05)brightness(1.06);
 }
 
 .hero--cinematic .hero__overlay{
@@ -438,19 +438,27 @@ footer {
   grid-template-columns: 1.1fr .9fr;
   gap: 34px;
   align-items: center;
-  padding: 160px 0 110px; /* reprend l’esprit de ton spacing actuel */
+  padding: 130px 0 90px; /* reprend l’esprit de ton spacing actuel */
 }
 
 .hero--cinematic h1{
-  margin: 12px 0 0;
-  font-size: clamp(2.8rem, 4.6vw, 4.2rem);
-  line-height: 1.02;
-  letter-spacing: -0.6px;
+  margin: 10px 0 0;
+  font-size: clamp(2.1rem, 3.6vw, 3.2rem);
+  line-height: 1.08;
+  letter-spacing: -0.4px;
 }
 
 .hero--cinematic p{
+  margin-top: 12px;
+  font-size: 1rem;
   max-width: 58ch;
-  color: rgba(255,255,255,.78);
+  color: rgba(255,255,255,.80);
+}
+/* Badge plus discret */
+.hero--cinematic .badge{
+  font-size: 12px;
+  padding: 8px 12px;
+  opacity: .95;
 }
 
 /* Cartouche à droite (style “éditorial/architecture”) */
@@ -459,8 +467,8 @@ footer {
   width: min(480px, 100%);
   padding: 20px 20px 18px;
   border-radius: 18px;
-  background: rgba(0,0,0,.38);
-  border: 1px solid rgba(212,175,55,.22);
+  background: rgba(0,0,0,.28);
+  border: 1px solid rgba(212,175,55,.18);
   box-shadow: 0 20px 70px rgba(0,0,0,.55);
   backdrop-filter: blur(10px);
 }
@@ -581,7 +589,7 @@ footer {
 @media (max-width: 980px){
   .hero--cinematic .hero__content{
     grid-template-columns: 1fr;
-    padding: 140px 0 80px;
+    padding: 110px 0 70px;
   }
   .principes-grid{ grid-template-columns: 1fr; }
 }
