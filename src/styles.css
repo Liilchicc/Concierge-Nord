@@ -597,3 +597,43 @@ footer {
   }
   .principes-grid{ grid-template-columns: 1fr; }
 }
+/* Harmonisation du select avec les inputs (contact form) */
+#contact-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(216, 174, 94, 0.35);
+  background-color: #0e0e0e;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+/* Flèche discrète (look premium) */
+#contact-form select {
+  background-image:
+    linear-gradient(45deg, transparent 50%, #d8ae5e 50%),
+    linear-gradient(135deg, #d8ae5e 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(50% - 3px),
+    calc(100% - 14px) calc(50% - 3px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Hover / focus (cohérent avec inputs) */
+#contact-form select:hover,
+#contact-form select:focus {
+  border-color: rgba(216, 174, 94, 0.7);
+  background-color: #121212;
+}
+
+/* Option disabled (placeholder) */
+#contact-form select option:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
