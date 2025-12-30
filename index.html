@@ -382,89 +382,34 @@ Nous réalisons des photos de haute qualité qui subliment votre bien, augmenten
             <textarea rows="4" placeholder="Décrivez votre bien et vos attentes"></textarea>
             <button type="submit" class="btn-primary">Envoyer</button>
             -->
-          <section id="contact" class="contact-section">
-  <div class="container">
+          <form id="contact-form">
+  <input type="text" name="nom" placeholder="Nom" autocomplete="name" required />
 
-    <h2>Contact & onboarding</h2>
+  <input type="email" name="email" placeholder="Email" autocomplete="email" required />
 
-    <form id="contact-form">
+  <input
+    type="tel"
+    name="telephone"
+    placeholder="Téléphone (ex: +1 418 555 1234)"
+    autocomplete="tel"
+    inputmode="tel"
+    pattern="^[0-9+(). -]{7,20}$"
+    required
+  />
 
-      <input
-        type="text"
-        name="nom"
-        placeholder="Nom"
-        required
-      />
+  <input type="text" name="ville" placeholder="Ville / Quartier" autocomplete="address-level2" />
 
-      <input
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-      />
+  <textarea name="message" rows="4" placeholder="Décrivez votre bien et vos attentes" required></textarea>
 
-      <input
-        type="tel"
-        name="telephone"
-        placeholder="Téléphone (ex : +1 418 555 1234)"
-        required
-      />
+  <!-- Anti-spam simple -->
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
-      <input
-        type="text"
-        name="localisation"
-        placeholder="Ville / Quartier"
-      />
+  <button type="submit" class="btn-primary">Envoyer</button>
 
-      <select
-        name="moment_contact"
-        required
-      >
-        <option value="" disabled selected>
-          Moment préféré pour être contacté
-        </option>
-        <option value="Matin (8h – 12h)">Matin (8h – 12h)</option>
-        <option value="Après-midi (12h – 17h)">Après-midi (12h – 17h)</option>
-        <option value="Soir (17h – 20h)">Soir (17h – 20h)</option>
-        <option value="Indifférent">Indifférent</option>
-      </select>
+  <p id="form-status" style="margin-top:10px; color:#c7c7c7;"></p>
 
-      <textarea
-        name="message"
-        rows="4"
-        placeholder="Décrivez votre bien et vos attentes"
-      ></textarea>
-
-      <!-- Anti-spam discret -->
-      <input
-        type="text"
-        name="_gotcha"
-        style="display:none"
-        tabindex="-1"
-        autocomplete="off"
-      />
-
-      <button type="submit" class="btn-primary">
-        Envoyer
-      </button>
-
-      <a
-        class="btn-outline"
-        href="https://wa.me/15819222036"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Discuter sur WhatsApp
-      </a>
-
-      <!-- Message de confirmation -->
-      <p id="form-status" class="form-status" aria-live="polite"></p>
-
-    </form>
-
-  </div>
-</section>
-
+            <a class="btn-outline" href="https://wa.me/15819222036" target="_blank" rel="noreferrer">Discuter sur WhatsApp</a>
+          </form>
 
           </form>
           <div class="contact-placeholder">
