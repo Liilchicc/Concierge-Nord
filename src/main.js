@@ -75,7 +75,28 @@ const form = document.querySelector("#contact-form");
 const statusEl = document.querySelector("#form-status");
 
 if (form && statusEl) {
-  form.addEventListener("submit", () => {
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault(); // empêche la redirection Formspree
     statusEl.textContent = "Envoi en cours…";
+
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/f/mjgvpewg", {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" },
+      });
+
+      if (res.ok) {
+        form.reset();
+        statusEl.textContent = "Merci. Nous vous recontacterons rapidement.";
+      } else {
+        statusEl.textContent = "Erreur lors de l’envoi. Réessayez ou utilisez WhatsApp.";
+      }
+    } catch (err) {
+      statusEl.textContent = "Connexion impossible. Réessayez plus tard.";
+    }
   });
 }
+
