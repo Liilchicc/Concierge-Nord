@@ -71,32 +71,53 @@ planButtons.forEach((btn) => {
     btn.classList.add('active');
   });
 });
+
+
+// ==============================
+// Contact Form (Formspree AJAX)
+// ==============================
 const form = document.querySelector("#contact-form");
 const statusEl = document.querySelector("#form-status");
 
-if (form && statusEl) {
+// Remplace par TON endpoint exact Formspree
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgvpewg";
+
+if (form) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault(); // empêche la redirection Formspree
-    statusEl.textContent = "Envoi en cours…";
 
-    const formData = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (statusEl) statusEl.textContent = "Envoi en cours…";
+    if (submitBtn) submitBtn.disabled = true;
 
     try {
-      const res = await fetch("https://formspree.io/f/mjgvpewg", {
+      const data = new FormData(form);
+
+      const res = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
-        body: formData,
-        headers: { "Accept": "application/json" },
+        body: data,
+        headers: { Accept: "application/json" },
       });
 
       if (res.ok) {
         form.reset();
-        statusEl.textContent = "Merci. Nous vous recontacterons dans les plus brefs délais.";
+        if (statusEl) {
+          statusEl.textContent =
+            "Merci. Votre demande a bien été envoyée. Nous vous contacterons au moment indiqué.";
+        }
       } else {
-        statusEl.textContent = "Erreur lors de l’envoi. Réessayez ou utilisez WhatsApp.";
+        if (statusEl) {
+          statusEl.textContent =
+            "Erreur lors de l’envoi. Réessayez ou utilisez WhatsApp.";
+        }
       }
-    } catch (err) {
-      statusEl.textContent = "Connexion impossible. Réessayez plus tard.";
+    } catch {
+      if (statusEl) {
+        statusEl.textContent =
+          "Connexion impossible. Réessayez plus tard.";
+      }
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
     }
   });
 }
-
