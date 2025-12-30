@@ -90,7 +90,7 @@ if (form && statusEl) {
 
       if (res.ok) {
         form.reset();
-        statusEl.textContent = "Merci. Nous vous recontacterons rapidement.";
+        statusEl.textContent = "Merci. Nous vous recontacterons dans les plus brefs délais.";
       } else {
         statusEl.textContent = "Erreur lors de l’envoi. Réessayez ou utilisez WhatsApp.";
       }
