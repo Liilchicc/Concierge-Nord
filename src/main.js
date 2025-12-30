@@ -71,3 +71,11 @@ planButtons.forEach((btn) => {
     btn.classList.add('active');
   });
 });
+const form = document.querySelector("#contact-form");
+const statusEl = document.querySelector("#form-status");
+
+if (form && statusEl) {
+  form.addEventListener("submit", () => {
+    statusEl.textContent = "Envoi en cours…";
+  });
+}
