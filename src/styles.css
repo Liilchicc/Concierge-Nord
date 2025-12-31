@@ -221,8 +221,6 @@ nav ul li a:focus-visible::after {
   border: 1px dashed rgba(212, 175, 55, 0.45);
   border-radius: 12px;
   overflow: hidden;
-}
-
   /* IMPORTANT: force un vrai "bloc" qui peut s'étirer comme le formulaire */
   min-height: 100%;
 }
