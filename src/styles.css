@@ -223,6 +223,26 @@ nav ul li a:focus-visible::after {
   overflow: hidden;
 }
 
+  /* IMPORTANT: force un vrai "bloc" qui peut s'étirer comme le formulaire */
+  min-height: 100%;
+}
+
+/* IMPORTANT: l'image doit remplir le bloc (sinon effet "décalé") */
+.contact-placeholder img,
+.plan-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;       /* remplit sans déformer */
+  object-position: center;
+}
+
+/* Bonus: assure que la grid étire bien ses enfants */
+.contact-grid {
+  align-items: stretch;
+}
+
+
 .plan-actions {
   display: flex;
   gap: 12px;
